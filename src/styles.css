@@ -1,0 +1,248 @@
+:root {
+  --color-white: rgb(255,255,255);
+  --color-gray: rgb(241,241,241);
+  --color-black: rgb(0,0,0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.topNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background-color: var(--color-gray);
+}
+
+.contactsItems {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+
+.bottomNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--color-black);
+}
+
+.bottomNav a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.navItem {
+  color: var(--color-white);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHeader {
+  color: var(--color-black);
+  margin-top: 30px;
+}
+
+.headerText {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.headerCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 20px;
+}
+
+.headerCard1 {
+  height: 100%;
+  width: 100%;
+  background-image: url('https://media.bodyandfit.com/i/bodyandfit/Whats-your-goal?w=256&sm=aspect&aspect=1:1&fmt=webp');
+  background-size: contain;
+}
+
+.headerCard2 {
+  height: 200px;
+  width: 200px;
+  background-image: url('https://media.bodyandfit.com/i/bodyandfit/Prepare-Before-Training-AEP?w=256&sm=aspect&aspect=1:1&fmt=webp');
+  background-size: contain;
+}
+
+.headerCard3 {
+  height: 200px;
+  width: 200px;
+  background-image: url('https://media.bodyandfit.com/i/bodyandfit/AnytimeEnergy-AES?w=256&sm=aspect&aspect=1:1&fmt=webp');
+  background-size: contain;
+}
+
+.headerCard4 {
+  height: 200px;
+  width: 200px;
+  background-image: url('https://media.bodyandfit.com/i/bodyandfit/Recover-After-Training-GSW?w=256&sm=aspect&aspect=1:1&fmt=webp');
+  background-size: contain;
+}
+
+.headerCard5 {
+  height: 200px;
+  width: 200px;
+  background-image: url('https://media.bodyandfit.com/i/bodyandfit/Weight-Gain-Mass?w=256&sm=aspect&aspect=1:1&fmt=webp');
+  background-size: contain;
+}
+
+.headerCard6 {
+  height: 200px;
+  width: 200px;
+  background-image: url('https://media.bodyandfit.com/i/bodyandfit/Strength-&-Endurance-Creatine?w=256&sm=aspect&aspect=1:1&fmt=webp');
+  background-size: contain;
+}
+
+.card:hover {
+  transform: scale(1.1) translateY(-8px);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+/* Products By Category List */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mainTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionDetails {
+  font-weight: 400;
+}
+
+.productsQuantity {
+  align-self: flex-start;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.mainBottom {
+  display: grid;
+  grid-template-rows: repeat(3, 450px);
+  grid-template-columns: repeat(2, 320px);
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.productCard:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.534);
+}
+
+.productImage {
+  flex: 1;
+  height: 360px;
+  width: 320px;
+  background-color: var(--color-gray);
+}
+
+.porductDeatailsContainer {
+  display: flex;
+  height: 90px;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.productName {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.productDetails {
+  font-weight: 400;
+}
+
+.productPrice {
+  font-weight: 500;
+}
+
+.img1 {
+  background-image: url('https://content.optimumnutrition.com/i/on/on-bcaa-1000_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
+  background-size: contain;
+  background-position: center;
+}
+
+.img2 {
+  background-image: url('https://content.optimumnutrition.com/i/on/on-amino-energy_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
+  background-size: contain;
+  background-position: center;
+}
+
+.img3 {
+  background-image: url('https://content.optimumnutrition.com/i/on/on-ess-amino-energy-sparkling_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
+  background-size: contain;
+  background-position: center;
+}
+
+.img4 {
+  background-image: url('https://content.optimumnutrition.com/i/on/on-amino-energy-collagen_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
+  background-size: contain;
+  background-position: center;
+}
+
+.img5 {
+  background-image: url('https://content.optimumnutrition.com/i/on/on-ae-advanced_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
+  background-size: contain;
+  background-position: center;
+}
+

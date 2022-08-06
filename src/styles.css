@@ -336,3 +336,34 @@
   color: white;
   margin-top: 10px;
 }
+
+.mainBottomDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.itemDCard {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.itemOverview {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.overviewTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.ItemDescription {
+  margin-top: 10px;
+}

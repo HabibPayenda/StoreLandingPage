@@ -150,6 +150,20 @@
   align-items: center;
 }
 
+.backIcon {
+  font-size: 26px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: cornflowerblue;
+  transition: all 0.2s ease-in;
+}
+
+.backIcon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
 .sectionDetails {
   font-weight: 400;
 }
@@ -189,6 +203,8 @@
   height: 360px;
   width: 320px;
   background-color: var(--color-gray);
+  background-size: contain;
+  background-position: center;
 }
 
 .porductDeatailsContainer {
@@ -214,36 +230,6 @@
 
 .productPrice {
   font-weight: 500;
-}
-
-.img1 {
-  background-image: url('https://content.optimumnutrition.com/i/on/on-bcaa-1000_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
-  background-size: contain;
-  background-position: center;
-}
-
-.img2 {
-  background-image: url('https://content.optimumnutrition.com/i/on/on-amino-energy_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
-  background-size: contain;
-  background-position: center;
-}
-
-.img3 {
-  background-image: url('https://content.optimumnutrition.com/i/on/on-ess-amino-energy-sparkling_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
-  background-size: contain;
-  background-position: center;
-}
-
-.img4 {
-  background-image: url('https://content.optimumnutrition.com/i/on/on-amino-energy-collagen_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
-  background-size: contain;
-  background-position: center;
-}
-
-.img5 {
-  background-image: url('https://content.optimumnutrition.com/i/on/on-ae-advanced_Image_01?locale=en-us,en-gb,*&layer0=$PLP_004-TAB$&fmt=webp');
-  background-size: contain;
-  background-position: center;
 }
 
 /* Item Details View */
@@ -347,10 +333,10 @@
 .itemDCard {
   display: flex;
   flex-direction: column;
-  border-top: solid 1px gray;
-  border-bottom: solid 1px gray;
+  border-bottom: solid 1px var(--color-black);
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .itemOverview {
@@ -366,4 +352,9 @@
 
 .ItemDescription {
   margin-top: 10px;
+}
+
+.itemBenefitsDetails {
+  margin-left: 20px;
+  width: 100%;
 }

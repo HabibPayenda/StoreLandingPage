@@ -2,7 +2,7 @@
 
 # Store
 
-This project is about to give us a handle as a student on how to make interactive a web site.
+This is a landing page of a store where users can look for the products that the store provides, if they want to buy a product they can comunicate through whatsUp with the store and order a product.
 
 ## Built With
 
